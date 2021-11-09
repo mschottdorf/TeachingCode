@@ -32,5 +32,9 @@ An event based neural network implementation for an arduino. The C Program conta
 1. The Code generates Voltage-Pulses on the digital pins of the controller. Each pin corresponding to one neuron.
 1. The serial interface sends a continuous stream of numbers, corresponding to the index of the spiking cell. 
 
+# DDM
+
+Simple implementation of the drift-diffusion model, and comparison to analytical decision-time-distribution.
+
 
 
