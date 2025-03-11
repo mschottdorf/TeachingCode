@@ -12,7 +12,7 @@ figure(1)
 imagesc(angle(z));
 colormap hsv;
 hold on;
-scatter(PWxList, PWyList, 'ko')
+scatter(PWxList, PWyList, 'ko', 'filled')
 title(count/(22*22))
 
 

@@ -23,6 +23,7 @@ end
 reg_sh_kernel=zeros(N);
 for k=1:N
   for l=1:N
+      % Kernel for pseudospectral integration
     reg_sh_kernel(k,l)=1./(1-dt*(r-(1-(KK(k)^2+KK(l).^2)).^2));
   end
 end

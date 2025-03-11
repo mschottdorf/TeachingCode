@@ -1,17 +1,18 @@
 
 
-beta = 10; % width of the spectrum. Larger -> narrower
+beta = 1; % width of the spectrum. Larger -> narrower
 
-z = create_OPM(beta, [512,512], 22);
+z = create_OPM(beta, [512,512], 10);
 
 [count,PWxList,PWyList,signList] = pw_finder_withsign(z);
 
 figure(1)
 imagesc(angle(z));
+daspect([1 1 1])
 colormap hsv;
 hold on;
-scatter(PWxList, PWyList, 'ko')
-title(count/(22*22))  % Notice convergence to pi for beta large
+scatter(PWxList, PWyList, 'ko', 'filled')
+title(count/(10*10))  % Notice convergence to pi for beta large
 
 function psi=create_OPM(beta,dim,nHyper)
 
