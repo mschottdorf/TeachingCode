@@ -1,4 +1,5 @@
-
+close all
+clear all;
 
 beta = 1; % width of the spectrum. Larger -> narrower
 
