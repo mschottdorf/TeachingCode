@@ -1,0 +1,7 @@
+1) The MATLAB code can be execute in MATLAB. No additional code needed.
+2) For the Julia code, proceed as follows:
+  - Download Julia 1.11 from http://julialang.org/downloads/
+  - Start Julia
+  - Install the four packages: PyPlot, DataStructures, RandomNumbers, StatsBase by first pressing "]" and then executing the command add PyPlot, FFTW, Statistics
+  - Load the code: `include("OrientationMapsJulia07.jl")`
+  - End run it: `close("all");@time lrim(10^6,0.98,1.7)` — This will produce the output, and some stats.
