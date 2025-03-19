@@ -73,7 +73,7 @@ function lrim(T, 𝒢, σ)
         z_half .= z0;  step!(z_half, Δt/2);  step!(z_half, Δt/2)
         err = norm(z_full .- z_half) / (norm(z_half) + 1e-10)
 
-        if err < tol
+        if err <= tol+1e-13 
             z .= z_half
             t += Δt
             Δt *= min(1.2, (tol/err)^0.5)
